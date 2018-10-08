@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule, SkipSelf, Optional } from '@angular/core';
+import { CommonModule } from '@angular/common'
 
 @NgModule({
   imports: [
@@ -8,9 +8,9 @@ import { CommonModule } from '@angular/common';
   declarations: []
 })
 export class CoreModule {
-  constructor(parent: CoreModule) {
+  constructor(@Optional() @SkipSelf() parent: CoreModule) {
     if (parent) {
-      throw new Error('模块已经存在, 不能再次加载');
+      throw new Error('模块已经存在, 不能再次加载')
     }
   }
 }
