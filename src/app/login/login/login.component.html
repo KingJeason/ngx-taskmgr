@@ -1,17 +1,33 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>登录</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-      <mat-form-field hintLabel="Max 10 characters">
-        <input matInput placeholder="Favorite food" value="Sushi">
+<form>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>登录</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="您的email">
       </mat-form-field>
-  </mat-card-content>
-  <mat-card-actions align="start">
-    <p>还没有账户? <a>注册</a></p>
-    <p>忘记密码? <a>找回</a></p>
-  </mat-card-actions>
-  <mat-card-footer>
-    Footer
-  </mat-card-footer>
-</mat-card>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="您的密码">
+      </mat-form-field>
+      <button mat-button mat-raised-button type="button">登录</button>
+    </mat-card-content>
+    <mat-card-actions class="text-right">
+      <p>还没有账户? <a>注册</a></p>
+      <p>忘记密码? <a>找回</a></p>
+    </mat-card-actions>
+    <!-- <mat-card-footer>
+      Footer
+    </mat-card-footer> -->
+  </mat-card>
+  <mat-card>
+      <mat-card-header>
+          <mat-card-title>每日佳句</mat-card-title>
+          <mat-card-subtitle>时间不会欺骗努力的人.</mat-card-subtitle>
+      </mat-card-header>
+      <img matCardImage src="/src/assets/loginbg.jpg">
+      <mat-card-content>
+          Text content
+      </mat-card-content>
+  </mat-card>
+</form>
