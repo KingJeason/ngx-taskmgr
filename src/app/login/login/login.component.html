@@ -1,17 +1,17 @@
-<<mat-card>
-    <mat-card-header>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-subtitle>Subtitle</mat-card-subtitle>
-    </mat-card-header>
-    <img matCardImage src="Card wide image source">
-    <mat-card-content>
-        Text content
-    </mat-card-content>
-    <mat-card-actions align="start">
-        <button mat-button (click)="onAction1">Action1</button>
-
-    </mat-card-actions>
-    <mat-card-footer>
-        Footer
-    </mat-card-footer>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>登录</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <mat-form-field hintLabel="Max 10 characters">
+        <input matInput placeholder="Favorite food" value="Sushi">
+      </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions align="start">
+    <p>还没有账户? <a>注册</a></p>
+    <p>忘记密码? <a>找回</a></p>
+  </mat-card-actions>
+  <mat-card-footer>
+    Footer
+  </mat-card-footer>
 </mat-card>
