@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{item.name}}</mat-card-title>
+    <mat-card-subtitle>Subtitle</mat-card-subtitle>
+  </mat-card-header>
+  <img matCardImage [src]="item.coverImg" alt="项目封面">
+  <mat-card-content>
+    {{item.desc}}
+  </mat-card-content>
+  <mat-card-actions align="start">
+    <button type="button" mat-button (click)="onAction1">
+      <mat-icon>note</mat-icon>
+      <span>编辑</span>
+    </button>
+    <button type="button" mat-button (click)="onAction1">
+      <mat-icon>group_add</mat-icon>
+      <span>邀请</span>
+    </button>
+    <button type="button" mat-button (click)="onAction1">
+      <mat-icon>delete</mat-icon>
+      <span>删除</span>
+    </button>
+  </mat-card-actions>
+  <mat-card-footer>
+    Footer
+  </mat-card-footer>
+</mat-card>

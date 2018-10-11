@@ -7,6 +7,7 @@ import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './login/login.module';
 import 'hammerjs';
+import { ProjectModule } from './project/project.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import 'hammerjs';
     BrowserAnimationsModule,
     MatSidenavModule,
     CoreModule,
-    LoginModule
+    LoginModule,
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
