@@ -1,6 +1,7 @@
 <app-project-item *ngFor="let project of projects"
   [item]="project"
   class="card"
+  (Invite)="launchInviteDialog()"
 >
 {{projects}}11
 </app-project-item>

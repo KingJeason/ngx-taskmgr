@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { NewProjectComponent } from '../new-project/new-project.component'
+import { InviteComponent } from '../invite/invite.component';
 @Component({
   selector: 'app-project-list',
   templateUrl: './project-list.component.html',
@@ -31,5 +32,7 @@ export class ProjectListComponent implements OnInit {
     })
     dialogRef.afterClosed().subscribe(result => console.log(result))
   }
-
+  launchInviteDialog() {
+    this.dialog.open(InviteComponent)
+  }
 }
