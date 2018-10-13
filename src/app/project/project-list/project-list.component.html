@@ -2,6 +2,8 @@
   [item]="project"
   class="card"
   (Invite)="launchInviteDialog()"
+  (editProject)="openEditProjectDialog()"
+  (deleteProject)="launchConfirmDialog()"
 >
 {{projects}}11
 </app-project-item>

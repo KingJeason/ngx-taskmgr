@@ -21,6 +21,7 @@ import {
   MatNativeDateModule,
   MatSelectModule
 } from '@angular/material';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   imports: [
@@ -67,6 +68,7 @@ import {
     MatNativeDateModule,
     MatSelectModule,
   ],
-  declarations: []
+  declarations: [ConfirmDialogComponent],
+  entryComponents: [ConfirmDialogComponent]
 })
 export class SharedModule { }

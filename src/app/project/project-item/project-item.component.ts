@@ -8,6 +8,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class ProjectItemComponent implements OnInit {
   @Input() item;
   @Output() Invite = new EventEmitter<void>()
+  @Output() editProject = new EventEmitter<void>();
+  @Output() deleteProject = new EventEmitter<void>();
   // @Output() toggleDarkTheme = new EventEmitter<boolean>()
   constructor() { }
 
@@ -16,5 +18,10 @@ export class ProjectItemComponent implements OnInit {
   onInviteClick() {
     this.Invite.emit()
   }
-
+  onEditClick() {
+    this.editProject.emit()
+  }
+  onDelClick() {
+    this.deleteProject.emit()
+  }
 }

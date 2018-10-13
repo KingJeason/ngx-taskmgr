@@ -1,0 +1,12 @@
+<form>
+  <h1 matDialogTitle>{{title}}</h1>
+  <mat-dialog-content>
+    {{content}}
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-button type="button" mat-raised-button color="primary" (click)="onClick(true)">确定</button>
+    <button mat-button matDialogClose (click)="onClick(false)">取消</button>
+
+  </mat-dialog-actions>
+</form>
