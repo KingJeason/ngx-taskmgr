@@ -14,6 +14,8 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 1,
           desc: '任务一: 去发多少地方啊',
+          completed: true,
+          priority: 1,
           owner: {
             id: 1,
             name: '张三',
@@ -24,12 +26,15 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 2,
           desc: '任务一: 去发多少地方啊',
+          completed: false,
+          priority: 2,
           owner: {
             id: 1,
             name: '李四',
             avatar: 'avatars:svg-12'
           },
-          dueDate: new Date()
+          dueDate: new Date(),
+          reminder: new Date()
         }
       ]
     },
@@ -39,7 +44,9 @@ export class TaskHomeComponent implements OnInit {
       tasks: [
         {
           id: 1,
-          desc: '任务一: 去发多少地方啊',
+          desc: '任务一: 去发多少地方啊111223423424',
+          completed: false,
+          priority: 3,
           owner: {
             id: 1,
             name: '张三',
@@ -50,6 +57,8 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 2,
           desc: '任务一: 去发多少地方啊',
+          completed: false,
+          priority: 3,
           owner: {
             id: 1,
             name: '李四',
@@ -66,6 +75,8 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 1,
           desc: '任务一: 去发多少地方啊',
+          completed: true,
+          priority: 3,
           owner: {
             id: 1,
             name: '张三',
@@ -76,6 +87,8 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 2,
           desc: '任务一: 去发多少地方啊',
+          completed: false,
+          priority: 3,
           owner: {
             id: 1,
             name: '李四',
