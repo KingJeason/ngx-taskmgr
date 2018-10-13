@@ -16,12 +16,12 @@ import { TaskModule } from './task/task.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     MatSidenavModule,
     CoreModule,
     LoginModule,
     TaskModule,
-    ProjectModule
+    ProjectModule,
+    BrowserAnimationsModule, // 一般放到最后,放到前面可能导致异常
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,7 +10,8 @@
         </app-header>
       </header>
       <main>
-        <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
+        <div class="square" [@square]="squareState" (click)="onClick()"></div>
       </main>
       <footer>
         <app-footer></app-footer>
