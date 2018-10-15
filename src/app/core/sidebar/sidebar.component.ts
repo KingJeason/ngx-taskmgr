@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output EventEmitter } from '@angular/core';
 import { getDate } from 'date-fns';
+
 export interface Section {
   name: string;
   updated: Date;
@@ -11,6 +12,7 @@ export interface Section {
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  @Output() NavClick = new EventEmitter<void>()
   today = 'day'
   folders: Section[] = [
     {
@@ -41,5 +43,7 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
     this.today = `day${getDate(new Date())}`
   }
-
+  onNavClick() {
+    this.NavClick.emit()
+  }
 }

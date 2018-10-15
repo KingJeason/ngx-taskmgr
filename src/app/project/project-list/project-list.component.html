@@ -1,12 +1,9 @@
-<app-project-item *ngFor="let project of projects"
-  [item]="project"
-  class="card"
-  (Invite)="launchInviteDialog()"
-  (editProject)="openEditProjectDialog()"
-  (deleteProject)="launchConfirmDialog()"
->
-{{projects}}11
-</app-project-item>
-<button  class="fab-button" mat-fab type="button" (click)="openNewProjectDialog()">
-  <mat-icon>add</mat-icon>
-</button>
+<div fxLayout="row" fxLayoutWrap [@listAnim]="projects.length">
+  <app-project-item *ngFor="let project of projects" fxFlex="0 0 360px" fxFlex.xs="1 1 auto" fxLayout="row" [item]="project"
+    class="card" (Invite)="launchInviteDialog()" (editProject)="openEditProjectDialog()" (deleteProject)="launchConfirmDialog(project)">
+    <!-- {{projects}} -->
+  </app-project-item>
+  <button class="fab-button" mat-fab type="button" (click)="openNewProjectDialog()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

@@ -1,4 +1,4 @@
-<div class="task-lists">
+<div class="task-lists" fxLayout="row" fxLayoutGap="20px">
   <app-task-list class="list-container" *ngFor="let list of lists">
     <app-task-header (editTaskList)="lanuchEditListDialog()" (deleteTaskList)="lanuchConfirmDialog()" (newTask)="lanuchNewTaskDialog()" (moveAll)="lanchMoveAllDialog()" [header]="list.name"></app-task-header>
     <app-task-item *ngFor="let task of list.tasks" [item]="task" (taskClick)="launchUpdateTaskDialog(task)"></app-task-item>
